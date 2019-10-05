@@ -1,0 +1,14 @@
+.Header-bar {
+    top: 0;
+    height: 60px;
+    background-color: #424242;
+    border-radius: 0px 0px 2px 2px;
+}
+
+.Header-logo {
+    position: absolute;
+    left: 1em;
+    top: .6em;
+    height: 2.5em;
+    pointer-events: none;
+  }

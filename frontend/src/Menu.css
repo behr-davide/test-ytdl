@@ -1,0 +1,49 @@
+.Menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    width: 224px;
+    height: calc(100% - 60px);
+    background-color: rgba(231, 231, 231, 0.82);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Menu-title {
+    padding: 16px 8px 8px;
+    position: relative;
+    left: 1em;
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #666666;
+
+}
+
+.Menu-item {
+    display: block;
+    padding: 0px 8px 8px;
+    position: relative;
+    left: 1em;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: #666666;
+}
+
+.Menu-item:hover {
+    font-weight: 600;
+}
+
+.Menu-fav {
+    margin: 0px 8px -3px 0px;
+}

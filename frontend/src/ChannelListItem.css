@@ -1,0 +1,39 @@
+.Menu-item {
+    display: block;
+    padding: 0px 8px 8px;
+    position: relative;
+    left: 1em;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: #666666;
+}
+
+.Menu-item-selected {
+    display: block;
+    padding: 0px 8px 8px;
+    position: relative;
+    left: 1em;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: #666666;
+}
+
+.Menu-item:hover {
+    font-weight: 600;
+}
+
+.Menu-icon {
+    margin: 0px 8px -3px 0px;
+}

@@ -3,6 +3,7 @@ import './Sider.css';
 import ChannelListItem from './ChannelListItem.js'
 import { API, graphqlOperation } from 'aws-amplify';
 import * as queries from './graphql/queries';
+import * as subscriptions from './graphql/subscriptions';
 
 class Sider extends React.Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class Sider extends React.Component {
 
     componentDidMount(){
         this.listQuery();
+        this.subscribeToNewChannels();
     }
 
     listQuery = async () => {
@@ -26,6 +28,18 @@ class Sider extends React.Component {
 
     setCurrentChannel(channel) {
         this.setState({currentChannel: channel});
+    }
+
+    subscribeToNewChannels() {
+        const subscription = API.graphql(
+            graphqlOperation(subscriptions.onCreateChannel)
+        );
+        subscription.subscribe({
+            next: (data) => {
+                const newChannelList = this.state.channels.concat(data.value.data.onCreateChannel);
+                this.setState({ channels: newChannelList })
+            }
+        });
     }
       
     render() {

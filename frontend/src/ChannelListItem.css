@@ -28,6 +28,16 @@
     cursor: pointer;
 
     color: #666666;
+    
+}
+
+.Menu-item-selected-box {
+    position: absolute;
+    left: 204px;
+    margin: 0px 8px -8px 0px;
+    width: 5px;
+    height: 24px;
+    background-color: #58C88C;
 }
 
 .Menu-item:hover {

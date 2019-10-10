@@ -20,6 +20,7 @@ class ChannelListItem extends React.Component {
                     <li className="Menu-item-selected">
                         <img src={favSelected} className="Menu-icon" alt="favorite"/>
                         {this.props.title}
+                        <img className="Menu-item-selected-box" alt=""/>
                     </li>
                 }
             </div>

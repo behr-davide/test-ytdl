@@ -1,20 +1,8 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateChannel = `subscription OnCreateChannel(
-  $id: ID
-  $title: String
-  $isLive: Boolean
-  $queue: [String]
-  $currentSong: CreateSongInput
-) {
-  onCreateChannel(
-    id: $id
-    title: $title
-    isLive: $isLive
-    queue: $queue
-    currentSong: $currentSong
-  ) {
+export const onCreateChannel = `subscription OnCreateChannel {
+  onCreateChannel {
     id
     title
     isLive

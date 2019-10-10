@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/pubsub": "^1.1.2",
     "aws-amplify": "^1.1.40",
+    "aws-amplify-react": "^2.4.4",
+    "aws-appsync": "^2.0.0",
+    "graphql-tag": "^2.10.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "redux": "^4.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
